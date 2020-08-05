@@ -29,6 +29,3 @@ On the left side, once the user inputs a city, it is added to an list that is di
 
 ![](images/Recent.png)
 
-
-## Future Updating & Additions
-Adding lists or rows into each hour time block could allow the user to enter in content in a helpful way. This could be an added tool to this application in the future.

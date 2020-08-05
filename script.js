@@ -18,7 +18,7 @@ function makeRow(city) {
        
   
         let city = document.getElementById('city').value 
-        // let place = ($(this).prev().attr('id'))
+      
         makeRow(city)
     
   
@@ -28,18 +28,10 @@ function makeRow(city) {
             console.log(moment().format("dddd, MMMM YYYY"))
             let lat = res.data.coord.lat
             let lon = res.data.coord.lon
-            // let image =  res.data.weather[0].icon
+    
             let image = "https://openweathermap.org/img/w/" + res.data.weather[0].icon + ".png"
 
-            // let image =  ("https://openweathermap.org/img/w/0" + res.data.weather[0].icon + ".png") 
-            // var iconCode = res.weather[0].icon 
             
-            // var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png"
-            // console.log(iconCode)
-            // if (res.data.weather[0].main === "Clear") {
-            //   console.log('hi')
-            // }
-            // <h2>Weather: ${("#icon").html("<img src='" + iconUrl  + + "'>")}}</h2> 
 
             document.getElementById('weather').innerHTML = `
                  <h1>${res.data.name}</h1>
@@ -61,27 +53,17 @@ function makeRow(city) {
                  if (res.data.value < 3 ) {
                    console.log('1')
                    $('#uv').addClass('favorable')
-                  // btn.addClass("btn-success")
+              
                 } else if ( res.data.value > 3 && res.data.value > 7) {
                   console.log('2')
                   $('#uv').addClass('moderate')
-                  // btn.addClass("btn-warning")
+                
                 } else {
                   console.log('3')
                   $('#uv').addClass('severe')
-                  // btn.addClass("btn-danger")
+                  
                 }
-                //  if (data.value < 3 ) {
-                //    btn.addClass("btn-success")
-                //  }
-                //  console.log(res.data.weather[0].main) 
-
-                //  if (res.data.weather[0].main === "Clear") {
-                //   console.log('hi')
-                // }
-                //  } else if {
-                //      console.log('over 3')
-                //  } })
+      
                  
                  document.getElementById('uv').innerHTML = `
                  <h4>UX: ${uv}`
@@ -90,17 +72,6 @@ function makeRow(city) {
             
                 })
                  .catch(err => { console.log(err) })
-
-
-
-        //     document.getElementById('weather').innerHTML = `
-        //     <h1>${res.data.name}</h1>
-        //     <h2>Weather: ${res.data.weather[0].description}</h2>
-        //     <h3>Temperature: ${res.data.main.temp}</h3>
-        //     <h3>Humidity: ${res.data.main.humidity}</h3>
-        //     <h3>Wind Speed: ${res.data.wind.speed}</h3>
-        //     <h4>UX: ${res.data.coord.value}
-        //   `
           })
           .catch(err => { console.log(err) })
 
