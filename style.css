@@ -1,0 +1,44 @@
+#head {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
+#now {
+    background-color: cadetblue;
+}
+
+#future {
+    background-color: purple;
+}
+
+
+.column {
+    float: left;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+
+  .weather {
+      font-size: small;
+  }
+
+  .hide {
+      display:none;
+  }
+
+  .favorable {
+      background-color: green;
+  }
+  .moderate {
+    background-color: yellow;
+}
+.severe {
+    background-color: red;
+}

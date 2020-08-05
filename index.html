@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="head">
+         <h1>Weather App</h1>
+     </div>
+
+     <div class="container-fluid padding">
+         <div class="row">
+        <div class="col-lg-2">
+    <form>
+      <p>
+        <label for="city">city</label>
+        <input type="text" name="city" id="city">
+      </p>
+      <p>
+        <button id="search">Search</button>
+      </p>
+    </form>
+    <h4>Recent Searches:</h4>
+    <ul class="recent list-group" id="recent"></ul>
+    </div>
+  
+    <div class="col-lg-10 weather">
+        <div id="weather" ></div>
+        <div id="uv"></div>
+        <div id="cloud">
+    </div>
+
+    <br>
+
+        <div id="forecast" class="card"></div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+
+
+ 
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <script src="./script.js"></script>
+</body>
+</html>
